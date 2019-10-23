@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCustomerDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerDetails" nillable="true" type="tns:CustomerDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerDetails" nillable="true" type="tns:ArrayOfCustomerDetails" />
+  <xs:complexType name="CustomerDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUSTOMER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DTM_APPROVED" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DTM_END_SEND" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DTM_START_SEND" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESTAR_APPID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIELD_NOTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRODUCT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SURVEYOR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TASK_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerDetails" nillable="true" type="tns:CustomerDetails" />
+</xs:schema>
