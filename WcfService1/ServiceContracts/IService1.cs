@@ -18,6 +18,9 @@ namespace WcfService1.ServiceContracts
         [OperationContract]
         List<CustomerDetails> GetCustomerDetails(string CustomerName);
 
+        [OperationContract]
+        List<CustomerDetails> GetAllCustomerDetails();
+
         //[OperationContract]
         //List<CustomerDetails> INSERTDB(string CustomerName);
 
